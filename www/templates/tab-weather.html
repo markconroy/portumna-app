@@ -1,0 +1,12 @@
+<ion-view title="Weather">
+  <ion-content class="has-header">
+    <!-- Display current location's weather data-->
+    <h3>Welcome to {{city}}</h3>
+    <h4>Current Weather:</h4>
+      <p><weather-icon icon="current.icon" id="current-icon"></weather-icon> {{current.currently.summary}}</p>
+    <h4>Temperature:</h4>
+      <p>{{current.currently.temperature}}°C</p>
+    <h4>Coming Days:</h4>
+      <p>{{current.daily.summary}}</p>
+  </ion-content>
+</ion-view>

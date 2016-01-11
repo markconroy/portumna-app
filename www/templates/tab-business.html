@@ -1,0 +1,12 @@
+<ion-view title="Portumna Business Directory">
+  <ion-content ng-controller="BusCtrl" ng-init="init()" class="has-header">
+    <div class="list">
+      <a ng-repeat="item in nodes" class="item" ng-click="browse(item.node.link)">
+        <b>{{item.node.title}}</b><br>
+        <b>{{item.node.website}}</b><br>
+        <img ng-src="{{ item.node.main_image.src }}" src="{{ item.node.main_image.src }}" >
+        <span ng-bind-html="item.node.summary"></span>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
